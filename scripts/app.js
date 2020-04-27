@@ -1,3 +1,15 @@
+const buttons = document.querySelectorAll('.calc-button');
+const calcDisplayText = document.querySelector('.calc-display-text'); 
+
+buttons.forEach(button => {
+    button.addEventListener('click', updateCalcDisplay);
+});
+
+function updateCalcDisplay(e) {
+    calcDisplayText.innerText = e.target.innerText;
+}
+
+
 function add(a,b) {
     return a + b;
 }
@@ -26,3 +38,4 @@ function operate(operator, a, b) {
             return divide(a,b);
     }
 }
+
