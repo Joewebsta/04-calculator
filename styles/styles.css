@@ -1,16 +1,14 @@
 body {
     margin: 0;
-}
-
-.calc-container {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
+
 .calc {
-    width: 320px;
+    width: 330px; /**********FIX ME back to 320**********/
     height: 500px;
     display: flex;
     flex-direction: column;;
@@ -53,5 +51,5 @@ body {
     height: 75px;
     background-color: red;
     text-align: center;
-    /* border: 1px solid red; */
+    border: 1px solid black;
 }
